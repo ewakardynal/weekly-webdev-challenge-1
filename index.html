@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Contact form</title>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="logo">
+      <div class="logo-img"><img src="img/logo.png" alt="logo"></div><div class="logo-title"><h1>masteralb</h1><p>creative</p></div>
+    </header>
+    <div class="forms">
+       <section class="col-1">
+          <div class="register-form">
+             <h1>Register Form</h1>
+             <div class="shadow">
+             <div class="form">
+                <form action="">
+<!--               <div class="icon-pswd"><span class="pipe">| </span><input type="text" placeholder="Password"></div>-->
+                   <div class="form-input"><input type="text" name="reg-username" class="user" placeholder="Username" required></div>
+                   <div class="form-input"><input type="password" name="reg-pswd" class="pswd" placeholder="Password" required></div>
+                   <div class="form-input"><input type="password" name="reg-conf-pswd" class="pswd" placeholder="Confirm Password" required></div>
+                   <div class="form-input"><input type="email" name="reg-email" class="email" placeholder="Email" required></div>
+                   <div class="form-input">
+                   <input list="location" name="reg-location" class="location" placeholder="Your Location" required>
+                   <datalist id="location">
+                      <option value="Europe">
+                      <option value="Asia">
+                      <option value="Africa">
+                   </datalist>
+                   </div>
+                   <div class="form-input-checkbox">
+                      <input type="checkbox" name="reg-terms" id="terms" class="input-checkbox" value="true" hidden required>
+                      <label for="terms" class="label-checkbox">
+                         <span class="square-checkbox"></span>
+                         <p>I have read and accept the terms of use.</p>
+                      </label>
+                   </div>
+                   <input type="submit" value="Sign up" class="btn-big">
+                </form>
+             </div>
+             </div>
+          </div>
+          
+          <div class="send-email">
+             <h1>Send Email</h1>
+             <div class="shadow">
+             <div class="form">
+                <form action="">
+                   <div class="form-input"><input type="text" name="send-username" class="user" placeholder="Your Name" required></div>
+                   <div class="form-input"><input type="email" name="send-email" class="email" placeholder="Your Email" required></div>
+                   <textarea name="nazwa" cols="" rows="10">Type your message ...</textarea>
+                  
+                   <div class="form-input-checkbox">
+                      <input type="checkbox" name="reg-terms" id="copy" class="input-checkbox" value="true" hidden required>
+                      <label for="copy" class="label-checkbox">
+                         <span class="square-checkbox"></span>
+                         <p>Send a copy to my Email</p>
+                      </label>
+                   </div>
+                   <input type="submit" value="Send Email" class="btn-big">
+                </form>
+             </div>
+             </div>
+          </div>
+       </section>
+       
+       <section class="col-2">
+          <div class="sign-in-form">sign in form </div>
+          <div class="recover-form">recover form</div>
+          <div class="subscribe-form">subscribe-form</div>
+       </section>
+    </div>
+     
+  </div>
+   
+</body>
+</html>

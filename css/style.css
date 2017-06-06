@@ -1,0 +1,229 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-size: 16px;
+   background: url(../img/1.png) center no-repeat ;
+   -webkit-background-size: 100% 100%;
+   background-size: 100% 100%;
+}
+
+.wrapper {
+   max-width: 1050px;
+   margin: 2em auto;
+/*   background-color: #ddd;*/
+}
+
+.logo{
+   text-align: center;
+   opacity: 0.4;
+}
+.logo-title, .logo-img{
+   display: inline-block;
+}
+.logo-title{
+   text-align: left;
+   padding-left: 1em;
+}
+.forms{
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: flex;
+   justify-content: space-around;
+}
+
+.col-1, .col-2 {
+/*   background-color: crimson;*/
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: flex;
+   flex-direction: column;
+/*   padding: 2em;*/
+   margin-top: 2em;
+   max-width: 40%;
+}
+
+.col-2{
+   background-color: blueviolet;
+}
+
+/************** FORM ****************/
+.form {
+   background-color: #f4f4f4;
+   padding: 1.5em;
+   border-radius: 5px;
+}
+
+.shadow{
+   background-color: rgba(0,0,0,0.4);
+   padding: 1em;
+   margin: 1em 0 3em 0;
+   border-radius: 5px;
+   
+}
+/************** BUTTONS ****************/
+.btn-big{
+   width: 100%;
+   padding: 0.6em;
+   border: 1px solid #33c311;
+   background: #44d422 linear-gradient(to top, rgba(255, 255, 25, 0.1), rgba(255, 255, 25, 0.5));
+   color: #eee;
+   text-shadow: 1px 1px 1px #222;
+   font-size: 1em;
+   border-radius: 5px;
+}
+
+/************** REGISTER FORM ****************/
+.register-form h1, .send-email h1 {
+   text-align: center;
+   color: #eee;
+   text-shadow: 1px 1px 1px #222;
+}
+
+
+/*
+input{
+   background-color: #f8f8f8;
+   border:none;
+   max-width: 90%;
+   height: 40px;
+   padding-left: 80px;
+   border: border: 1px solid #bbb;
+}
+*/
+
+input:focus{
+   outline:none;
+}
+
+.icon-pswd{
+   background-color: #f8f8f8;
+   display: inline-block;
+   border: 1px solid #bbb;
+   margin: 1em;
+   width: 90%;
+/*   height: 40px;*/
+/*   line-height: 30px;*/
+/*   padding: 1em;*/
+}
+.icon-pswd::before{
+   content: '\f007';
+   display: inline-block;
+   font-family: "fontawesome";
+   color: #ccc;
+   padding: 0.5em;
+   font-size: 1.5em
+}
+.pipe{
+   font-size: 2em;
+}
+
+input{
+   background-color: #f8f8f8;
+   border: 1px solid #bbb;
+   border-radius: 3px;
+   color: #222;
+   font-size: 1em;
+   height: 40px;
+   width: 100%;
+   padding-left: 80px;
+}
+.form-input{
+   position: relative;
+   margin-bottom: 1em;
+}
+.form-input::before{
+   content: "";
+   border-right: 2px solid #ccc;
+   height: 30px;
+   left: 60px;
+   top: 5px;
+   position: absolute;
+}
+.user{
+   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)),url(../img/user-icon.png) left 15px center no-repeat ;
+}
+.pswd{
+   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)),url(../img/password-icon.png) left 15px center no-repeat ;
+}
+.email{
+   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)),url(../img/mail-icon.png) left 15px center no-repeat ;
+}
+.location{
+   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)),url(../img/location-icon.png) left 15px center no-repeat ;
+}
+
+.label-checkbox{
+   cursor: pointer;
+/*   font-size: 1.2em;*/
+}
+
+
+
+.square-checkbox {
+   display: inline-block;
+   position: relative;
+   width: 25px;
+   height: 25px;
+   border: 1px solid #bbb;
+   border-radius: 3px;
+   top: 7px;
+   margin-right: 10px;
+}
+.square-checkbox+p{
+   display: inline-block;
+   color: #bbb;
+   padding-bottom: 1em;
+   padding-top: 1em;
+}
+.input-checkbox:checked~.label-checkbox > .square-checkbox::before{
+   content: '';
+   position: absolute;
+   height: 13px;
+   width: 13px;
+   border-radius: 3px;
+   background-color: lawngreen;
+   top: 5px;
+   left: 5px;
+   
+
+}
+
+
+
+/************** SEND EMAIL ****************/
+.send-email {
+
+}
+textarea{
+   background-color: #f8f8f8;
+   border: 1px solid #bbb;
+   border-radius: 3px;
+   color: #777;
+   font-size: 1em;
+   width: 100%;
+   padding: 0.7em;
+   margin-right: 5%;
+}
+/************** SIGN IN FOFRM ****************/
+.sign-in-form {
+   background-color: fuchsia;
+}
+
+/************** RECOVER FORM ****************/
+.recover-form {
+   background-color: #646;
+}
+
+/************** SUBSCRIBE FORM ****************/
+.subscribe-form {
+   background-color: #818;
+}
+
