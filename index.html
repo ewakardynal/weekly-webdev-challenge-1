@@ -9,10 +9,10 @@
 <body>
   <div class="wrapper">
     <header class="logo">
-      <div class="logo-img"><img src="img/logo.png" alt="logo"></div><div class="logo-title"><h1>masteralb</h1><p>creative</p></div>
+      <div class="logo-img"><img src="img/logo.png" alt="logo"></div>
     </header>
     <div class="forms">
-       <section class="col-1">
+       <section class="col">
           <div class="register-form">
              <h1>Register Form</h1>
              <div class="shadow">
@@ -54,7 +54,7 @@
                    <textarea name="nazwa" cols="" rows="10">Type your message ...</textarea>
                   
                    <div class="form-input-checkbox">
-                      <input type="checkbox" name="reg-terms" id="copy" class="input-checkbox" value="true" hidden required>
+                      <input type="checkbox" name="send-copy" id="copy" class="input-checkbox" value="true" hidden required>
                       <label for="copy" class="label-checkbox">
                          <span class="square-checkbox"></span>
                          <p>Send a copy to my Email</p>
@@ -67,10 +67,55 @@
           </div>
        </section>
        
-       <section class="col-2">
-          <div class="sign-in-form">sign in form </div>
-          <div class="recover-form">recover form</div>
-          <div class="subscribe-form">subscribe-form</div>
+       <section class="col">
+          <div class="sign-in-form">
+             <h1>Sign In Form</h1>
+             <div class="shadow">
+             <div class="form">
+                <form action="">
+                   <div class="form-input"><input type="text" name="sign-in-username" class="user" placeholder="Username" required></div>
+                   <div class="form-input"><input type="password" name="sign-in-email" class="pswd" placeholder="Password" required></div>
+                   <div class="form-input-checkbox">
+                      <input type="checkbox" name="sign-in-remember" id="remember" class="input-checkbox" value="true" hidden required>
+                      <label for="remember" class="label-checkbox">
+                         <span class="square-checkbox"></span>
+                         <p>Remember me</p>
+                      </label>
+                   </div>
+                   <input type="submit" value="Send Email" class="btn-big">
+                </form>
+             </div>
+             </div>
+          </div>
+          
+          <div class="recover-form">
+             <h1>Recover Form</h1>
+             <div class="shadow">
+             <div class="form">
+                <form action="">
+                   <div class="form-input"><input type="email" name="recover-email" class="email" placeholder="Enter your Email" required></div>
+                   <div class="form-input"><input type="tel" name="recover-tel" class="phone" placeholder="Enter your Phone number" required></div>
+
+                   <input type="submit" value="Send Email" class="btn-big">
+                   <button class="btn-big btn-done" disabled>Done</button>
+                </form>
+             </div>
+             </div>
+          </div>
+          
+          <div class="subscribe-form">
+             <h1>Subscribe Form</h1>
+             <div class="shadow">
+             <div class="form">
+                <form action="">
+                   <div class="form-input"><input type="email" name="subscribe-email" class="email" placeholder="Enter your Email" required></div>
+                   <input type="submit" value="Subscribe" class="btn-big">
+                   <input type="submit" value="No, Thanks" class="btn-big btn-red">
+                </form>
+             </div>
+             </div>
+          </div>
+          <div class="logo-button-img"><img src="img/logo-bottom.png" alt="logo"></div>
        </section>
     </div>
      
