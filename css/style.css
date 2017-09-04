@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
-*{
+* {
    margin: 0;
    padding: 0;
+   -webkit-box-sizing: border-box;
    box-sizing: border-box;
    font-family: 'Titillium Web', sans-serif;
 }
 
-body{
+body {
    font-size: 16px;
-   background: url(../img/1.jpg) center no-repeat ;
-   -webkit-background-size: 100% 100%;
+   background: url(../img/1.jpg) center no-repeat;
    background-size: 100% 100%;
 }
 
@@ -18,31 +18,40 @@ body{
    margin: 2em auto;
 }
 
-.logo, .logo-bottom-img{
+.logo,
+.logo-bottom-img {
    text-align: center;
    opacity: 0.3;
    padding: 1em;
 }
-.logo img, .logo-bottom-img img{
+
+.logo img,
+.logo-bottom-img img {
    text-align: center;
    max-width: 100%;
 }
 
-.forms{
-   display: -webkit-flex;
+.forms {
    display: -moz-flex;
    display: -ms-flex;
    display: -o-flex;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
+   -ms-flex-pack: distribute;
    justify-content: space-around;
 }
 
 .col {
-   display: -webkit-flex;
    display: -moz-flex;
    display: -ms-flex;
    display: -o-flex;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
    flex-direction: column;
    margin-top: 2em;
    width: 42%;
@@ -50,25 +59,28 @@ body{
 
 
 /************** FORM ****************/
+
 .form {
    background-color: #f4f4f4;
    padding: 1.5em;
    border-radius: 5px;
 }
 
-.shadow{
-   background-color: rgba(0,0,0,0.4);
+.shadow {
+   background-color: rgba(0, 0, 0, 0.4);
    padding: 1em;
    margin: 1em 0 3em 0;
    border-radius: 5px;
-   
 }
 
+
 /************** BUTTONS ****************/
-.btn-big{
+
+.btn-big {
    width: 100%;
    padding: 0.6em;
    border: 1px solid #33c311;
+   background: #44d422 -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 25, 0.1)), to(rgba(255, 255, 25, 0.5)));
    background: #44d422 linear-gradient(to top, rgba(255, 255, 25, 0.1), rgba(255, 255, 25, 0.5));
    color: #eee;
    text-shadow: 1px 1px 1px #222;
@@ -77,36 +89,44 @@ body{
    line-height: 1em;
 }
 
-.btn-big:hover{
+.btn-big:hover {
    cursor: pointer;
    background-color: #33c311;
 }
-.btn-done:hover{
+
+.btn-done:hover {
    cursor: not-allowed;
    opacity: 0.7;
    font-family: 'Titillium Web', sans-serif;
 }
 
+
 /************** REGISTER FORM ****************/
-.register-form h1, .send-email h1, .sign-in-form h1, .recover-form h1, .subscribe-form h1 {
+
+.register-form h1,
+.send-email h1,
+.sign-in-form h1,
+.recover-form h1,
+.subscribe-form h1 {
    text-align: center;
    color: #eee;
    text-shadow: 1px 1px 1px #222;
 }
 
-
-input:focus, textarea:focus{
-   outline:none;
+input:focus,
+textarea:focus {
+   outline: none;
 }
 
-.icon-pswd{
+.icon-pswd {
    background-color: #f8f8f8;
    display: inline-block;
    border: 1px solid #bbb;
    margin: 1em;
    width: 90%;
 }
-.icon-pswd::before{
+
+.icon-pswd::before {
    content: '\f007';
    display: inline-block;
    font-family: "fontawesome";
@@ -115,8 +135,8 @@ input:focus, textarea:focus{
    font-size: 1.5em
 }
 
-
-input, button{
+input,
+button {
    background-color: #f8f8f8;
    border: 1px solid #bbb;
    border-radius: 3px;
@@ -126,11 +146,13 @@ input, button{
    width: 100%;
    padding-left: 80px;
 }
-.form-input{
+
+.form-input {
    position: relative;
    margin-bottom: 1em;
 }
-.form-input::before{
+
+.form-input::before {
    content: "";
    border-right: 2px solid #ccc;
    height: 30px;
@@ -138,27 +160,35 @@ input, button{
    top: 5px;
    position: absolute;
 }
-.user{
-   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)),url(../img/user-icon.png) left 15px center no-repeat ;
-}
-.pswd{
-   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)),url(../img/password-icon.png) left 15px center no-repeat ;
-}
-.email{
-   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)),url(../img/mail-icon.png) left 15px center no-repeat ;
-}
-.location{
-   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)),url(../img/location-icon.png) left 15px center no-repeat ;
-}
-.phone{
-   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)),url(../img/phone-icon.png) left 15px center no-repeat ;
+
+.user {
+   background: -webkit-gradient(linear, left top, right top, from(rgba(248, 248, 248, 0.8)), to(rgba(248, 248, 248, 0.7))), url(../img/user-icon.png) left 15px center no-repeat;
+   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)), url(../img/user-icon.png) left 15px center no-repeat;
 }
 
-.label-checkbox{
+.pswd {
+   background: -webkit-gradient(linear, left top, right top, from(rgba(248, 248, 248, 0.8)), to(rgba(248, 248, 248, 0.7))), url(../img/password-icon.png) left 15px center no-repeat;
+   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)), url(../img/password-icon.png) left 15px center no-repeat;
+}
+
+.email {
+   background: -webkit-gradient(linear, left top, right top, from(rgba(248, 248, 248, 0.8)), to(rgba(248, 248, 248, 0.7))), url(../img/mail-icon.png) left 15px center no-repeat;
+   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)), url(../img/mail-icon.png) left 15px center no-repeat;
+}
+
+.location {
+   background: -webkit-gradient(linear, left top, right top, from(rgba(248, 248, 248, 0.8)), to(rgba(248, 248, 248, 0.7))), url(../img/location-icon.png) left 15px center no-repeat;
+   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)), url(../img/location-icon.png) left 15px center no-repeat;
+}
+
+.phone {
+   background: -webkit-gradient(linear, left top, right top, from(rgba(248, 248, 248, 0.8)), to(rgba(248, 248, 248, 0.7))), url(../img/phone-icon.png) left 15px center no-repeat;
+   background: linear-gradient(to right, rgba(248, 248, 248, 0.8), rgba(248, 248, 248, 0.7)), url(../img/phone-icon.png) left 15px center no-repeat;
+}
+
+.label-checkbox {
    cursor: pointer;
 }
-
-
 
 .square-checkbox {
    display: inline-block;
@@ -170,13 +200,15 @@ input, button{
    top: 7px;
    margin-right: 0.5em;
 }
-.square-checkbox+p{
+
+.square-checkbox+p {
    display: inline-block;
    color: #bbb;
    padding-bottom: 1em;
    padding-top: 1em;
 }
-.input-checkbox:checked~.label-checkbox > .square-checkbox::before{
+
+.input-checkbox:checked~.label-checkbox > .square-checkbox::before {
    content: '';
    position: absolute;
    height: 13px;
@@ -185,16 +217,12 @@ input, button{
    background-color: lawngreen;
    top: 5px;
    left: 5px;
-   
-
 }
 
 
 /************** SEND EMAIL ****************/
-.send-email {
 
-}
-textarea{
+textarea {
    background-color: #f8f8f8;
    border: 1px solid #bbb;
    border-radius: 3px;
@@ -204,66 +232,80 @@ textarea{
    padding: 0.7em;
    margin-right: 5%;
 }
+
+
 /************** SIGN IN FORM ****************/
-.sign-in-form .btn-big, .sign-in-form .form-input-checkbox{
+
+.sign-in-form .btn-big,
+.sign-in-form .form-input-checkbox {
    display: inline-block;
    width: 57%;
 }
 
-.sign-in-form .btn-big{
+.sign-in-form .btn-big {
    float: right;
    width: 43%
 }
 
 
 /************** RECOVER FORM ****************/
-.recover-form .btn-big{
+
+.recover-form .btn-big {
    width: 43%;
 }
-.recover-form .btn-done{
+
+.recover-form .btn-done {
    float: right;
 }
 
 
 /************** SUBSCRIBE FORM ****************/
-.subscribe-form .btn-big, .subscribe-form .btn-red{
+
+.subscribe-form .btn-big,
+.subscribe-form .btn-red {
    width: 43%;
 }
-.subscribe-form .btn-red{
+
+.subscribe-form .btn-red {
    float: right;
+   background: #f4495b -webkit-gradient(linear, left bottom, left top, from(rgba(255, 25, 25, 0.1)), to(rgba(255, 25, 25, 0.5)));
    background: #f4495b linear-gradient(to top, rgba(255, 25, 25, 0.1), rgba(255, 25, 25, 0.5));
    border: 1px solid #d22739;
 }
 
-.subscribe-form .btn-red:hover{
+.subscribe-form .btn-red:hover {
    background: #e3384a;
 }
 
 @media (max-width: 992px) {
-  .forms {
-     flex-direction: column;
-     align-items: center;
-  }
-
-   .col{
+   .forms {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+   }
+   .col {
       width: 450px;
    }
-
-   .register-form, .send-email, .sign-in-form, .recover-form, .subscribe-form{
+   .register-form,
+   .send-email,
+   .sign-in-form,
+   .recover-form,
+   .subscribe-form {
       width: 100%;
    }
-   .sign-in-form .btn-big, .sign-in-form .form-input-checkbox{
+   .sign-in-form .btn-big,
+   .sign-in-form .form-input-checkbox {
       width: 100%;
       float: none;
    }
-
 }
 
 @media (max-width: 480px) {
-
-   .col{
+   .col {
       width: 100%;
    }
-
 }
-
